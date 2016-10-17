@@ -11,7 +11,12 @@ $('.start').click(function () {
 });
 //游戏开始
 function game_begin(){
+  luckybagscore = 0; //得分
+  heartscore = 0; //得分
+  time = 4;
+  game_time = 15;
   $('.begin-state').hide();
+  $(".gameover").hide();
   $('.game-begin').show();
   var running = setInterval(function () {
                   $(".lasttime").html("剩余"+game_time+"秒")
@@ -140,5 +145,6 @@ function time_out(){
 //游戏结束
 function game_over(obj){
   $(".game-area").html("");
+  $(".gameover").show();
   window.clearInterval(obj);
 }
