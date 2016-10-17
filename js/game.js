@@ -3,6 +3,8 @@ var heartscore = 0; //得分
 var window_width = $(window).width();
 var window_height = $(window).height();
 var time = 4;
+var game_time = 15;
+var balls = {'luckybag-ball':2,'lolipop-ball':2,'bloom-ball':3,'rabbit-ball':1,'heart-ball':2}; //定义小球个数
 $('.start').click(function () {
   $('.settimeout').show();
   time_out();
@@ -11,7 +13,22 @@ $('.start').click(function () {
 function game_begin(){
   $('.begin-state').hide();
   $('.game-begin').show();
-  $(".ball").each(function(i,e){ // 启动所有小球
+  var running = setInterval(function () {
+                  $(".lasttime").html("剩余"+game_time+"秒")
+                  if(game_time<=0){
+                    console.log('game over');
+                    game_over(running);
+                  }
+                  game_time--;
+                },1000);
+  //添加小球
+  $.each(balls,function functionName(k,v) {
+    for(v;v>0;v--){
+      $( ".game-area" ).append( "<div class='ball "+k+"'></div>" );
+    }
+  });
+  // 启动所有小球
+  $(".ball").each(function(i,e){
     $(e).attr("lock","false"); // 定义锁
     var balls_type = $(e).attr('class').split(' ')[1];
     $(e).click(function(){ // 定义click事件
@@ -38,7 +55,7 @@ function random_start(self){//下落
      duration: 5000,//get_random_num(4,6)*1200, // 随机速度
      complete: function(){ // 落底后再次启动
       $(self).hide();
-      run(self); 
+      run(self);
     }
   });
 }
@@ -98,13 +115,13 @@ function ball_click_animate(self){ // 小球被点击动画
     }
   });
   }
-  
+
 }
-function get_random_num(min,max){  // 随机数 
-  var range = max - min;   
-  var rand = Math.random();   
-  return (min + Math.round(rand * range));   
-}  
+function get_random_num(min,max){  // 随机数
+  var range = max - min;
+  var rand = Math.random();
+  return (min + Math.round(rand * range));
+}
 
 //倒计时
 function time_out(){
@@ -115,7 +132,13 @@ function time_out(){
     $('.timeout' +time).show();
     setTimeout('time_out()', 1000);
   }else if (time == 1){
-    $('.settimeout').hide(); 
+    $('.settimeout').hide();
     game_begin();
   }
+}
+
+//游戏结束
+function game_over(obj){
+  $(".game-area").html("");
+  window.clearInterval(obj);
 }
