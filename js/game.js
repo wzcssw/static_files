@@ -149,7 +149,8 @@ function time_out(){
 
 //游戏结束
 function game_over(obj){
-  $(".game-area").html("");
+  $(".game-area").html(luckybagscore);
+  $("#_luckybagscore").html();
   $(".gameover").show();
   window.clearInterval(obj);
 }
