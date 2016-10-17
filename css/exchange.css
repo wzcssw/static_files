@@ -1,0 +1,86 @@
+.banner{
+	width: 100%;
+	height: 8rem;
+	background: url(../img/exchange.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.myluckybag{
+	height: 2.4rem;
+	line-height: 2.4rem;
+	padding-top: 3.36rem;
+	text-align: center;
+	color: #fff;
+}
+.myluckybag span{
+	color: #fd6252;
+	font-size: .672rem;
+	vertical-align: bottom;
+}
+a.goexchange{
+	display: block;
+	background: url(../img/pink-btn.png) no-repeat;
+	background-size: 100% 100%;
+	height: 1.52rem;
+	line-height: 1.52rem;
+	width: 4.48rem;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: .8rem;
+	color: #fff;
+}
+.history{
+	height: 1.312rem;
+	line-height: 1.312rem;
+	background: #fff;
+	color: #fd6252;
+	font-size: .576rem;
+	text-align: center;
+	margin: 0 auto;
+}
+.coupon-cont{
+	min-height: 9rem;
+	width: 11.04rem;
+	padding: .32rem;
+	background: #fff;
+	border: .16rem solid #f94c45;
+	color: #fff;
+}
+.coupon{
+	width: 11.04rem;
+	height: 2.4rem;
+	background: url(../img/couponbg.png) no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: .3rem;
+}
+.coupon div{
+	display: table-cell;
+	vertical-align: middle;
+	height: 2.4rem;
+	font-size: .48rem;
+	text-align: center;
+}
+.coupon .couponName{
+	width: 2.4rem;
+	padding: 0 .4rem;
+}
+.coupon .couponCode{
+	width: 4.1rem;
+	padding: 0 .5rem;
+	text-align: left;
+}
+.coupon .couponUrl{
+	width: 2.44rem;
+	padding-right: .44rem;
+}
+a.goUrl{
+	width: 2.4rem;
+	height: 1.04rem;
+	line-height: 1.04rem;
+	background: #fbdb46;
+	border-radius: .2rem;
+	color: #d85f07;
+	text-decoration: none;
+	display: inline-block;
+}

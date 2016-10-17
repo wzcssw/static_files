@@ -1,0 +1,65 @@
+body{
+	background: #fd6252;
+	padding-top: .288rem;
+	height: auto;
+}
+.main{
+	width: 11.04rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.share-cont{
+	width: 9.74rem;
+	height: 4.832rem;
+	padding: 1rem .5rem 0 .8rem;
+	margin-bottom: .15rem;
+	background: url(../img/sharebg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.content{
+	color: #fd6d04;
+	font-size: .5rem;
+	line-height: .7rem;
+	height: 2.8rem;
+}
+.share-cont a{
+	background: url(../img/pink-btn.png) no-repeat;
+	background-size: 100% 100%;
+	width: 4rem;
+	height: 1.28rem;
+	line-height: 1.28rem;
+	display: block;
+	color: #fff;
+	font-size: .7rem;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+}
+.share-tip{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.black-wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .6;
+}
+.tips{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: #fff;
+	line-height: 1rem;
+	text-align: center;
+	font-size: .576rem;
+}
+.tips img{
+	width: 2.88rem;
+	margin: 2rem 0 0 7rem;
+}

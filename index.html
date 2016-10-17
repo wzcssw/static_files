@@ -1,4 +1,146 @@
-
-<h1>The new one.2</h1>
-<br>
-<a href="assets/2.html">panda</a>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>{weixinfr:$title}</title>
+	<script src="js/responsive.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<!-- 未开始状态 -->
+		<div class="begin-state">
+			<div class="tools">
+				<a href="shareHeart.html" class="myheart">
+					<img src="img/heart.png">
+					<span class="heart">送祝福</span>
+				</a>
+				<a href="exchange.html" class="luckybag">
+					<img src="img/luckybag.png">
+					<span class="lucky">x1</span>
+				</a>
+			</div>
+			<div class="begin-cont">
+				<a href="javascript:;" class="start"></a>
+				<p>剩余<span class="shadow">3</span>次</p>
+			</div>
+			<div class="link">
+				<a href="rankingList.html">排行榜</a>
+				<a href="exchange.html">兑换福袋</a>
+			</div>
+			<a href="rule.html" class="rule"><img src="img/ruleicon.png">活动规则及服务协议</a>
+		</div>
+		<!-- 未关注引导关注 -->
+		<div class="wrap-popup">
+			<div class="black-wrap"></div>
+			<div class="popup-cont">
+				<div class="content">
+					<div class="tip-cont">
+						<h2>小提示</h2>
+						<p>亲，还没有关注哦<br>快去关注后再玩游戏吧</p>
+					</div>
+				</div>
+				<a href="javascript:;" class="close">好的</a>
+			</div>
+		</div>
+		<!-- 输入手机号弹层 -->
+		<div class="wrap-phone">
+			<div class="phone-cont">
+				<input type="tel" class="phonenum">
+				<span class="check-tip"></span>
+				<a href="javascript:;" class="submitnum">立即参与</a>
+			</div>
+			<div class="tips">
+				小提示：<br>手机将作为您领取奖品的唯一身份证明<br>请输入正确的手机号
+			</div>
+		</div>
+		<!-- 游戏次数用尽 -->
+		<div class="wrap-popup">
+			<div class="black-wrap"></div>
+			<div class="popup-cont">
+				<div class="content">
+					<div class="tip-cont">
+						<h2>很抱歉</h2>
+						<p>亲，没次数啦~<br>明天再来玩吧！</p>
+					</div>
+				</div>
+				<a href="javascript:;" class="close">好的</a>
+			</div>
+		</div>
+		<!-- 倒计时 -->
+		<div class="settimeout">
+			<div class="black-wrap"></div>
+			<div class="timeout">
+				<img src="img/1.png" class="timeout1">
+				<img src="img/2.png" class="timeout2">
+				<img src="img/3.png" class="timeout3">
+			</div>
+		</div>
+		<!-- 游戏进行中 -->
+		<div class="game-begin">
+			<div class="black-wrap"></div>
+			<div class="score-panel"> 
+				<div class="lasttime">剩余15秒</div>
+				<div class="game-tool">
+					<img src="img/heart.png">
+					<span class="heart-span">0</span>
+					<img src="img/luckybag.png">
+					<span class="luckybag-span">0</span>
+				</div>
+			</div>
+			<div class="game-area">
+				<div class="ball luckybag-ball"></div>
+				<div class="ball luckybag-ball"></div>
+				<div class="ball luckybag-ball"></div>
+				<div class="ball lolipop-ball"></div>
+				<div class="ball lolipop-ball"></div>
+				<div class="ball lolipop-ball"></div>
+				<div class="ball lolipop-ball"></div>
+				<div class="ball bloom-ball"></div>
+				<div class="ball bloom-ball"></div>
+				<div class="ball rabbit-ball"></div>
+				<div class="ball rabbit-ball"></div>
+				<div class="ball heart-ball"></div>
+				<div class="ball luckybag-ball"></div>
+				<div class="ball luckybag-ball"></div>
+				<div class="ball luckybag-ball"></div>
+				<div class="ball lolipop-ball"></div>
+				<div class="ball lolipop-ball"></div>
+				<div class="ball lolipop-ball"></div>
+				<div class="ball lolipop-ball"></div>
+				<div class="ball bloom-ball"></div>
+				<div class="ball bloom-ball"></div>
+				<div class="ball rabbit-ball"></div>
+				<div class="ball rabbit-ball"></div>
+				<div class="ball heart-ball"></div>
+			</div>
+			<div class="gameover">
+				<div class="gameover-cont">本局福包数<span>10</span></div>
+				<div class="gameover-btn">
+					<a href="javascript:;">再试一次</a>
+					<a href="exchange.html">兑换福包</a>
+				</div>
+			</div>
+		</div>
+		<!-- 送祝福弹层 -->
+		<div class="wrap-popup">
+			<div class="black-wrap"></div>
+			<div class="popup-cont">
+				<div class="content">
+					<div class="tip-cont">
+						<h2>很抱歉</h2>
+						<p>今天还没有戳中爱心祝福呢<br>快去玩游戏赚爱心吧</p>
+					</div>
+				</div>
+				<a href="javascript:;" class="close">好的</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/game.js"></script>
+</body>
+</html>

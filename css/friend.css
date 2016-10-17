@@ -1,0 +1,30 @@
+body{
+	background: #fd6252;
+}
+.envelope{
+	background: url(../img/envelope.png) no-repeat;
+	background-size: 100% 100%;
+	width: 9.2rem;
+	height: 6.176rem;
+	padding: 2.56rem 1.4rem 5.248rem 1.4rem;
+	margin-top: 1.92rem;
+}
+.content{
+	font-size: .68rem;
+	color: #fd6d04;
+	height: 4.8rem;
+	line-height: .9rem;
+}
+.sure{
+	display: block;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	font-size: .68rem;
+	width: 3.8rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background: url(../img/pink-btn.png) no-repeat;
+	background-size: 100% 100%;
+}

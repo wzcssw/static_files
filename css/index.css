@@ -1,0 +1,334 @@
+body{
+	background: #ff3f26;
+}
+a{
+	text-align: center;
+	text-decoration: none;
+}
+.wrap{
+	background: url(../img/bg.png) no-repeat;
+	background-size: 100% 100%;
+	height: 19.328rem;
+	overflow: hidden;
+}
+.black-wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .6;
+}
+/* 未开始状态样式 */
+
+.tools{
+	height: 11.76rem;
+	text-align: right;
+	color: #fff;
+	line-height: 1.5rem;
+	font-size: .384rem;
+}
+.tools span{
+	padding-right: .3rem
+}
+.tools a{
+	color: #fff;
+	display: inline-block;
+}
+.tools a img{
+	vertical-align: middle;
+	width: .8rem;
+}
+a.start{
+	background: url(../img/begin.png) no-repeat;
+	background-size: 100% 100%;
+	width: 3.2rem;
+	height: 3.2rem;
+	margin: 0 auto;
+	display: block;
+}
+p{
+	text-align: center;
+	color: #fff18e;
+	height: 1.28rem;
+	line-height: 1.28rem;
+}
+.link{
+	font-size: 0;
+}
+.link a{
+	background: url(../img/btn.png) no-repeat;
+	background-size: 100% 100%;
+	width: 4rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	display: inline-block;
+	color: #e15d05;
+	font-size: .7rem;
+	margin: 0 1rem;
+}
+a.rule{
+	font-size: .384rem;
+	color: #fff;
+	display: block;
+	margin: .64rem auto 0 auto;
+}
+a.rule img{
+	vertical-align: bottom;
+    padding-right: 5px;
+}
+span.shadow{
+	font-size: .56rem;
+	color: #fd6233;
+	padding: 0 .1rem;
+	text-shadow:#fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;   
+}
+
+/* 输入手机号弹层样式 */
+
+.wrap-phone{
+	width: 100%;
+	height: 100%;
+    max-width: 414px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(../img/phonenum.png) no-repeat;
+	background-size: 100% 100%;
+	display: none; 
+}
+.phone-cont{
+	padding-top: 4.1rem;
+	width: 9.28rem;
+	margin: 0 auto;
+	font-size: 0;
+}
+.phone-cont *{
+	display: inline-block;
+	width: 100%;
+	height: 1.68rem;
+	line-height: 1.68rem;
+	border: none;
+	border-radius: .2rem;
+	font-size: .768rem;
+	text-align: center;
+}
+.phonenum{
+	height: 1rem;
+	line-height: 1rem;
+	padding: .34rem 0;
+}
+.check-tip{
+	font-size: .48rem;
+	color: #fd7429;
+}
+.submitnum{
+	background: #fbd819;
+	color: #fff;
+}
+.tips{
+	padding-top: 7.28rem;
+	line-height: .8rem;
+	font-size: .48rem;
+	color: #fff;
+	text-align: center;
+}
+
+/* 送祝福弹层&未关注引导关注 */
+
+.wrap-popup{
+	width: 100%;
+	max-width: 414px;
+	overflow: hidden;
+	margin: 0 auto;
+	display: none;
+}
+.popup-cont{
+	width: 10.72rem;
+	position: fixed;
+	top: 4.16rem;
+	left: 50%;
+	margin-left: -5.36rem;
+}
+.popup-cont .content{
+	width: 10.16rem;
+	height: 6.3rem;
+	border-radius: .4rem;
+	padding-top: .2rem;
+	border: .28rem solid #fdbc2f;
+	background-color: #fee366;
+	background-image: 
+	linear-gradient(
+		45deg, #fff 25%, 
+		transparent 25%, transparent 75%, 
+		#fff 75%, #fff
+		), 
+	linear-gradient(
+		45deg, #fff 25%, 
+		transparent 25%, transparent 75%, 
+		#fff 75%, #fff
+		);
+	background-size: 1.5rem 1.5rem;
+	background-position: 0 0, .75rem .75rem;
+}
+.popup-cont .tip-cont{
+	width: 9.56rem;
+	height: 6.06rem;
+	background: #fdf7e0;
+	margin: 0 auto;
+	color: #fd6252;
+	text-align: center;
+}
+.popup-cont .tip-cont h2{
+	font-size: .8rem;
+	line-height: 2.4rem;
+}
+.popup-cont .tip-cont p{
+	color: #fd6252;
+	line-height: 1.184rem;
+	font-size: .68rem;
+}
+.popup-cont .close{
+	background: url(../img/pink-btn.png) no-repeat;
+	background-size: 100% 100%;
+	width: 3.6rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	margin: 1.76rem auto 0 auto;
+	display: block;
+	color: #fff;
+	font-size: .7rem;
+}
+/* 倒计时 */
+.settimeout{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	display: none;
+}
+.timeout{
+	width: 4.912rem;
+	height: 4.912rem;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -2.456rem 0 0 -2.456rem;
+}
+.timeout img{
+	width: 100%;
+	display: none;
+}
+
+/* 游戏开始小球 */
+.game-begin{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.score-panel{
+	width: 100%;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	position: fixed;
+	color: #fff;
+	z-index: 9;
+}
+.score-panel img{
+	vertical-align: middle;
+	width: .8rem;
+}
+.score-panel .lasttime{
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: .5rem;
+	width: 3.5rem;
+	height: 1rem;
+	line-height: 1rem;
+	margin-left: .5rem;
+	text-align: center;
+}
+.score-panel .game-tool{
+	text-align: right;
+	display: inline-block;
+	width: 7rem;
+}
+.game-area{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 1.6rem;
+	overflow: hidden;
+}
+.ball{
+	height: 2.608rem;
+	width: 2rem;
+	position: absolute;
+	margin-top: -4rem;
+	z-index: 9;
+}
+.luckybag-ball{ 
+	background:url(../img/luckybag.png) no-repeat;
+	background-size: 100% 100%;
+}
+.bloom-ball{ 
+	background:url(../img/bloom.png) no-repeat;
+	background-size: 100% 100%;
+}
+.lolipop-ball{ 
+	background:url(../img/lolipop.png) no-repeat;
+	background-size: 100% 100%;
+}
+.rabbit-ball{ 
+	background:url(../img/rabbit.png) no-repeat;
+	background-size: 100% 100%;
+}
+.heart-ball{ 
+	background:url(../img/heart.png) no-repeat;
+	background-size: 100% 100%;
+}
+.bloom-ball.zha{ 
+	background:url(../img/zhazhazha.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 游戏结束 */
+.gameover{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 15;
+	top: 0;
+	background: url(../img/gameover.png) no-repeat;
+	background-size: 100% 100%;
+	display: none;
+}
+.gameover-cont{
+	width: 5.8rem;
+	padding-top: 9.6rem;
+	margin: 0 auto;
+	font-size: .68rem;
+	color: #fff;
+	text-align: center;
+}
+.gameover-btn{
+	width: 12rem;
+	padding-top: 3.76rem;
+	overflow: hidden;
+	font-size: 0;
+}
+.gameover-btn a{
+	width: 4rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: .68rem;
+	color: #fff;
+	display: inline-block;
+	margin: 0 1rem;
+	background: url(../img/pink-btn.png) no-repeat;
+	background-size: 100% 100%;
+}
