@@ -11,10 +11,7 @@ $('.start').click(function () {
 });
 //游戏开始
 function game_begin(){
-  luckybagscore = 0; //得分
-  heartscore = 0; //得分
-  time = 4;
-  game_time = 15;
+  init_val();
   $('.begin-state').hide();
   $(".gameover").hide();
   $('.game-begin').show();
@@ -41,6 +38,14 @@ function game_begin(){
     });
     run(e);
   });
+}
+function init_val() {
+  luckybagscore = 0; //得分
+  heartscore = 0; //得分
+  time = 4;
+  game_time = 15;
+  $(".luckybag-span").html(luckybagscore);
+  $(".heart-span").html(heartscore);
 }
 function run(self){ // 设定随机的启动时间
   setTimeout(function(){
